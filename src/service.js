@@ -1,6 +1,6 @@
 /* eslint-disable import/no-anonymous-default-export */
 import axios from './axiosConfig.ts'; 
-axios.defaults.baseURL="http://localhost:5171"
+axios.defaults.baseURL=process.env.REACT_APP_URL;
 // const apiUrl = "http://localhost:5171"
 
 export default {
