@@ -1,13 +1,13 @@
 /* eslint-disable import/no-anonymous-default-export */
 import axios from './axiosConfig.ts'; 
 // axios.defaults.baseURL=process.env.REACT_APP_URL;
-axios.defaults.baseURL="https://todo-api-server-ufp4.onrender.com";
-// const apiUrl = "http://localhost:5171"
+// axios.defaults.baseURL="https://todo-api-server-ufp4.onrender.com";
+const apiUrl = "https://todo-api-server-ufp4.onrender.com"
 
 export default {
   
   getTasks: async () => {
-    const result = await axios.get(`/items`)    
+    const result = await axios.get(`${apiUrl}/items`)    
     return result.data;
   },
 
