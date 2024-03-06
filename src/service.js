@@ -1,6 +1,7 @@
 /* eslint-disable import/no-anonymous-default-export */
 import axios from './axiosConfig.ts'; 
-axios.defaults.baseURL=process.env.REACT_APP_URL;
+// axios.defaults.baseURL=process.env.REACT_APP_URL;
+axios.defaults.baseURL="https://todo-api-server-ufp4.onrender.com";
 // const apiUrl = "http://localhost:5171"
 
 export default {
