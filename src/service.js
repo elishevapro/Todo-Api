@@ -7,7 +7,10 @@ const apiUrl = "https://todo-api-server-ufp4.onrender.com"
 export default {
   
   getTasks: async () => {
-    const result = await axios.get(`${apiUrl}/items`)    
+    console.log(`${apiUrl}/items`);
+    const result = await axios.get(`${apiUrl}/items`) 
+    console.log(result.data);   
+    console.log(result.request);   
     return result.data;
   },
 
