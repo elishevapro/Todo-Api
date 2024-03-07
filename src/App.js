@@ -3,7 +3,11 @@ import service from './service.js';
 
 function App() {
   const [newTodo, setNewTodo] = useState("");
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState([  {
+    "id": 1,
+    "name": "AAAAAAAAAAAAAAAAAAA",
+    "isComplete": false
+  }]);
 
   
   async function getTodos() {
