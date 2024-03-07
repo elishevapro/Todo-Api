@@ -8,9 +8,11 @@ export default {
   
   getTasks: async () => {
     console.log(`${apiUrl}/items`);
-    const result = await axios.get(`${apiUrl}/items`) 
+    // const result = await axios.get(`${apiUrl}/items`) 
+    const result = await axios.get("https://todo-api-server-ufp4.onrender.com/items") 
     console.log(result.data);   
-    console.log(result.request);   
+    console.log(result.request);  
+    console.log(); 
     return result.data;
   },
 
